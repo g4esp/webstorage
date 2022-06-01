@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "title": "Lorem task",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "priority": "Alta",
+        "tags": ["Lorem", "Ipsum", "Amet"]
+    }
+]
