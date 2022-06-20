@@ -185,7 +185,7 @@ function App() {
                 .filter(filtxprior)
                 .map((task) => {
                   return (
-                    <article className={`bg-gray-100 border-md p-6 font-mono text-left rounded-md relative ${task.done === true ? "text-slate-300" : ""}`} key={task.id}>
+                    <article className={`bg-gray-100 shadow-md border-md p-6 font-mono text-left rounded-md relative ${task.done === true ? "text-slate-300" : ""}`} key={task.id}>
                       <div className="flex justify-between items-center">
                         <h3 
                           className={`uppercase text-2xl mb-2 ${task.done === true ? "" : task.priority === "High" ? "before:content-['•'] before:text-red-600 before:animate-ping": "before:content-['•'] before:text-green-400"}`}>
