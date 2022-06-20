@@ -51,9 +51,14 @@ function App() {
     setTagsInput(e.target.value)
   }
   const handleTagsArr = (e) => {
-    if (e.key === "Enter" || e.key === "," || e.target.value.indexOf(",") !== -1) {
+    if (e.key === "Enter" || e.key === ",") {
       e.preventDefault()
       task.tags.push(tagsInput.trim())
+      setTagsInput('')
+      return
+    }
+    if(e.target.value.indexOf(",") !== -1) {
+      task.tags.push(e.target.value.replace(",", ""))
       setTagsInput('')
       return
     }
